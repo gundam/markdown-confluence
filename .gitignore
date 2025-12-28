@@ -19,3 +19,4 @@ data.json
 
 dist/
 .mcp-previews/
+packages/lib/src/**/*.d.ts
