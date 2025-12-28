@@ -34,7 +34,8 @@
       "packages/mermaid-electron-renderer",
       "packages/mermaid-puppeteer-renderer",
       "packages/cli",
-      "packages/obsidian"
+      "packages/obsidian",
+      "packages/mcp"
    ],
    "lint-staged": {
       "packages/**/*.ts": "prettier --write"

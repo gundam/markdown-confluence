@@ -27,6 +27,9 @@
       "packages/cli": {
         "component": "@markdown-confluence/cli"
       },
+      "packages/mcp": {
+        "component": "@markdown-confluence/mcp"
+      },
       "packages/mermaid-puppeteer-renderer": {
         "component": "@markdown-confluence/mermaid-puppeteer-renderer"
       },
@@ -49,7 +52,7 @@
     {
       "type": "linked-versions",
       "groupName": "obsidian packages",
-      "components": ["obsidian-confluence", "obsidian-confluence-root", "@markdown-confluence/lib", "@markdown-confluence/mermaid-electron-renderer", "@markdown-confluence/cli", "@markdown-confluence/mermaid-puppeteer-renderer"]
+      "components": ["obsidian-confluence", "obsidian-confluence-root", "@markdown-confluence/lib", "@markdown-confluence/mermaid-electron-renderer", "@markdown-confluence/cli", "@markdown-confluence/mcp", "@markdown-confluence/mermaid-puppeteer-renderer"]
     }
   ]
 }

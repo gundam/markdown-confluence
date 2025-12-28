@@ -1,0 +1,42 @@
+{
+    "name": "@markdown-confluence/mcp",
+    "version": "5.5.2",
+    "description": "MCP server for Markdown to Confluence preview",
+    "bin": "dist/index.js",
+    "type": "commonjs",
+    "scripts": {
+        "dev": "node esbuild.config.mjs",
+        "build": "npm run build -w @markdown-confluence/lib && tsc && node esbuild.config.mjs production",
+        "fmt": "npx prettier --write src/",
+        "lint": "eslint --ignore-path ../../.eslintignore --ext .js,.ts src/",
+        "prettier-check": "npx prettier --check src/"
+    },
+    "keywords": [
+        "mcp",
+        "markdown",
+        "confluence",
+        "adf"
+    ],
+    "author": "andymac4182",
+    "license": "Apache 2.0",
+    "devDependencies": {},
+    "dependencies": {
+        "@markdown-confluence/lib": "5.5.2",
+        "@modelcontextprotocol/sdk": "^1.0.0",
+        "markdown-it": "^13.0.1"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/",
+        "provenance": true
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/markdown-confluence/markdown-confluence",
+        "directory": "packages/mcp"
+    },
+    "homepage": "https://github.com/markdown-confluence/markdown-confluence/tree/main/packages/mcp",
+    "bugs": {
+        "url": "https://github.com/markdown-confluence/markdown-confluence/issues"
+    }
+}
