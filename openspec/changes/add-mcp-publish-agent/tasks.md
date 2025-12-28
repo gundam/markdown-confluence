@@ -1,8 +1,12 @@
 ## 1. 实现
-- [ ] 1.1 定义 MCP 输入输出协议（Markdown 输入、转换/预览结果输出）
-- [ ] 1.2 实现语义层：标题规范化与目录生成
-- [ ] 1.3 接入 markdown-confluence（MD → ADF）
-- [ ] 1.4 本地预览输出（ADF 原文 + HTML 渲染文件）
-- [ ] 1.5 预留 Confluence publish 对接点（接口与数据结构）
-- [ ] 1.6 基础错误处理与日志
+- [x] 1.1 定义 MCP 输入输出协议（Markdown 输入、转换/预览结果输出）
+- [x] 1.2 实现语义层：标题规范化与目录生成
+- [x] 1.3 接入 markdown-confluence（MD → ADF）
+- [x] 1.4 本地预览输出（ADF 原文 + HTML 渲染文件）
+- [x] 1.5 预留 Confluence publish 对接点（接口与数据结构）
+- [x] 1.6 基础错误处理与日志
 - [ ] 1.7 添加测试或最小验证脚本
+- [x] 1.8 提供 MCP Docker 镜像构建方式
+- [ ] 1.9 独立仓库拆分（仅 MCP + Dockerfile/README）
+- [ ] 1.10 发布渠道配置（GitHub + npm + GHCR）
+- [ ] 1.11 与主仓库版本同步策略
