@@ -47,6 +47,11 @@
   - `/Users/yuanhailiang/Desktop/Github/markdown-confluence/.mcp-previews/preview-1766885522520.html`
   - `/Users/yuanhailiang/Desktop/Github/markdown-confluence/.mcp-previews/preview-1766885522520.adf.json`
 
+### Docker 交付
+- 提供 Dockerfile，用于构建 MCP Server 镜像
+- 通过 `docker run -i` 以 stdio 方式运行
+- 预览文件建议挂载卷输出，例如将 `outputDir` 指向 `/data`
+
 ## Risks / Trade-offs
 - 未来发布接口的能力与稳定性会影响发布成功率
 

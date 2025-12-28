@@ -20,6 +20,13 @@
 - **WHEN** HTML 预览文件生成完成
 - **THEN** 系统在同目录生成 ADF JSON 文件并返回路径
 
+### Requirement: MCP Docker 镜像
+系统 MUST 提供 MCP Server 的 Docker 镜像构建方式，便于用户通过容器接入。
+
+#### Scenario: 容器启动 MCP Server
+- **WHEN** 用户构建并运行 Docker 镜像
+- **THEN** MCP Server 通过 stdio 启动并可被客户端连接
+
 ### Requirement: 语义整理（标题规范化与目录生成）
 系统 MUST 在转换前执行标题规范化与目录生成，并将目录插入文档开头。
 

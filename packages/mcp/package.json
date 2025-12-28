@@ -7,6 +7,7 @@
     "scripts": {
         "dev": "node esbuild.config.mjs",
         "build": "npm run build -w @markdown-confluence/lib && tsc && node esbuild.config.mjs production",
+        "build:docker": "docker build -f packages/mcp/Dockerfile -t markdown-confluence/mcp .",
         "fmt": "npx prettier --write src/",
         "lint": "eslint --ignore-path ../../.eslintignore --ext .js,.ts src/",
         "prettier-check": "npx prettier --check src/"

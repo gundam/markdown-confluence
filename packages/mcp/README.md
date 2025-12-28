@@ -20,3 +20,25 @@ Input fields:
 - `outputDir` (string, optional)
 
 The tool returns a JSON string containing the normalized Markdown, TOC, ADF JSON, preview HTML path, and the ADF JSON file path written alongside the preview.
+
+## Docker
+
+Build the image from the repo root:
+
+```bash
+docker build -f packages/mcp/Dockerfile -t markdown-confluence/mcp .
+```
+
+Run the MCP server with stdio (for MCP clients):
+
+```bash
+docker run -i --rm markdown-confluence/mcp
+```
+
+To capture preview output on the host:
+
+```bash
+docker run -i --rm -v "$(pwd)/.mcp-previews:/data" markdown-confluence/mcp
+```
+
+Set `outputDir` to `/data` so preview files are written to the mounted folder.
